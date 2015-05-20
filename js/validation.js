@@ -1,4 +1,4 @@
-var validateIntInput = function (event) {
+var validateIntInput = function (event) { // check input is valid or not
 		var inputValue = $(this).val(); 
 		var failed = false;
 		
@@ -20,7 +20,7 @@ var validateIntInput = function (event) {
 	};
 $(".intValue").keyup(validateIntInput);
 	
-var validateUniqueName = function(){
+var validateUniqueName = function(){ // check if the name doesn't exist
 		var unique = true;
 		for (var i = 0; i < tilemap.animations.length; i++){
 			if(tilemap.animations[i].name === $(this).val()){

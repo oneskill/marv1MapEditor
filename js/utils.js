@@ -88,15 +88,4 @@ var generateBackground = function(animation) {
 }
 
 
-var gridVisible = true; //function for show the grid or not
-$("#gridButton").click(function(){
-	if(!$(this).hasClass("disabled")){
-		if(gridVisible){
-			$("#grid").css("opacity",0);
-			gridVisible = false;
-		} else {
-			$("#grid").css("opacity",1);
-			gridVisible = true;
-		}
-	}
-});
+
